@@ -1,0 +1,56 @@
+\section{Introdução}
+\noindent O desenvolvimento de uma redação e uma atividade prática presente na cultura civilizada desde a invenção da escrita. ~\cite{lara:1995} cita que na década de 70 iniciou-se processo de redemocratização que consequentemente restitui a palavra ao estudante. O decreto 79.298, de 24 de Fevereiro de 1977 definiu a volta da redação à escola pela ``inclusão obrigatória da prova ou questão de redação em língua portuguesa'' nos concursos e vestibulares (Art. 1º, alínea d).
+
+Um bom desempenho em redação no Exame Nacional de Ensino Médio - ENEM é um requisito para ser aprovado no processo seletivo de acesso a inúmeras universidades públicas ~\cite{sisu:2017} e a importantes programas de governo como Ciência Sem Fronteiras ~\cite{csf:2017}.
+
+Em todo processo seletivo é comum o uso de marcações em gabaritos afim de automatizar o processo de correção, uma alternativa rápida e segura, até mesmo aplicações de provas eletrônicas são cada vez mais comum. É notável que todo o processo evoluiu com objetivo de agilidade, confiança e segurança do resultado. Entretanto segundo o edital do ENEM 2016, a avaliação das competências definidas na Tabela ~\ref{tab:matriz_referencia} de um texto de redação, ainda depende exclusivamente da supervisão de duas ou mais pessoas envolvidas ~\cite{edital_enem:2016}.
+
+A redação é aplicada no ENEM desde a primeira edição 1998, hoje o maior exame do Brasil, que na edição de 2016 contou com 8.627.195 escritos confirmados, e a participação direta de 11.360 profissionais externos na correção de 5.825.134 redações, entre eles, 378 supervisores e 10.982 avaliadores de acordo com a ~\cite{relatorio_de_gestao:2016}. 
+
+Segundo o edital do ENEM 2016, cada redação foi avaliada por, pelo menos, dois avaliadores, de forma independente, contabilizando um número mínimo de 11.650.268 avaliações manuais, das competências exigidas em um texto de redação pelo ENEM ~\cite{edital_enem:2016}.
+
+A hipótese desta monografia é que a classificação das competências de uma redação por um algoritmo de Aprendizado de Máquina pode ser tão eficiente e seguro quanto o processo de avaliação manual.
+
+\subsection{Definição do Problema de Pesquisa}
+
+Dado um corpus de redações classificar as competências exigidas em um texto de redação do tipo dissertativo-argumentativo.
+
+\subsection{Motivação}
+
+Com crescente volume e variedade de dados disponíveis, o processamento computacional que está mais barato e mais poderoso, e o armazenamento de dados de forma acessível, o Aprendizado de Máquina está no centro de muitos avanços tecnológicos, alcançado áreas antes exclusivas de seres humanos. Os carros autônomos do Google são o exemplo de uma atividade antes exclusiva de um humano e hoje exercida e aperfeiçoada por algoritmos de Aprendizado de Máquina ~\cite{waymo:2017}.
+
+Aplicações de Aprendizado de Máquina estão presentes na nossa vida cotidiana como, resultados de pesquisa web, análise de sentimento baseado em texto e na detecção de fraudes em operações com cartões de crédito ~\cite{batista1999aplicando}.
+
+\subsection{Objetivos Gerais e Específicos}
+
+Este trabalho tem como objetivo geral aplicar Aprendizado de Máquina na classificação das competências exigidas em um texto de redação do tipo dissertativo-argumentativo.
+
+\subsection{Objetivos Específicos}
+
+O método de construção do conhecimento deste trabalho terá como fundamentos processos de pesquisas relacionadas às áreas descritas. O mesmo será dividido em etapas dentro do escopo geral de forma detalhada e refinada para alcançar o objetivo geral acima, são particularizadas como os seguintes objetivos específicos:
+
+\begin{itemize}
+ \item Percorrer o banco de redações, filtrar e coletar redações avaliadas;
+ \item Normalizar os textos coletados, separar o tema, título, texto e competências avaliadas em uma estrutura de dados;
+ \item Montar um fluxo de trabalho utilizando a ferramenta para mineração de dados \textit{Orange} ~\cite{JMLR:demsar13a};
+ \item Ajustar e treinar os modelos classificadores com o corpus de redações; 
+ \item Realizar testes de acurácia, \textit{overfitting} e \textit{noise} sobre o modelo induzido;
+ \item Representar e comparar graficamente os resultados obtidos;
+\end{itemize}
+
+\subsection{Contribuições}
+
+O presente estudo contribuirá na área do Aprendizado de Máquina e diretamente no processo de classificação de um texto em prosa do tipo dissertativo-argumentativo.
+
+\subsection{Organização do trabalho}
+
+\noindent \textbf{Capitulo \ref{trab_rela}}: Trabalhos Relacionados cita alguns dos trabalhos lidos para  embasamento teórico que serviram de base para solucionar o problema proposto.
+
+\noindent \textbf{Capitulo \ref{fund_teo}}: Fundamentação Teórica apresenta todo o embasamento teórico utilizado para o desenvolvimento do estudo.
+
+\noindent \textbf{Capitulo \ref{meto}}: Método proposto apresenta as etapas passo a passo para desenvolver e resolver o problema proposto deste trabalho.
+
+\noindent \textbf{Capitulo \ref{result}}: Resultados Preliminares apresenta os resultados obtidos do trabalho desta pesquisa.
+
+\noindent \textbf{Capitulo \ref{plano}}: Plano de Trabalho organiza um conjunto de objetivos, processos e etapas que visa a conclusão do trabalho.
+
