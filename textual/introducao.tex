@@ -2,8 +2,8 @@
 \noindent O desenvolvimento de uma redação e uma atividade prática presente na 
 cultura civilizada desde a invenção da escrita. Na década de 70 iniciou-se 
 processo de redemocratização que consequentemente restitui a palavra ao 
-estudante. O decreto 79.298, de 24 de Fevereiro de 1977 definiu a volta da r
-edação à escola pela ``inclusão obrigatória da prova ou questão de redação em 
+estudante. O decreto 79.298, de 24 de Fevereiro de 1977 definiu a volta da 
+redação à escola pela ``inclusão obrigatória da prova ou questão de redação em 
 língua portuguesa'' nos concursos e vestibulares (Art. 1º, alínea d) 
 ~\cite{lara:1995}.
 
@@ -28,46 +28,33 @@ Google são o exemplo de uma atividade antes exclusivamente humana e hoje
 exercida e aperfeiçoada por algoritmos de Aprendizado de Máquina 
 ~\cite{waymo:2017}. O Aprendizado de Máquina está presente na nossa vida 
 cotidiana como, resultados de pesquisa web, análise de sentimento baseado em 
-texto e na detecção de fraudes em operações com cartões de crédito 
-~\cite{batista1999aplicando} entre outras aplicações.
+texto e na detecção de fraudes em operações com cartões de crédito entre outras 
+aplicações ~\cite{batista1999aplicando}.
 
-A hipótese desta monografia é que a classificação das competências de uma redação por um algoritmo de Aprendizado de Máquina pode ser tão eficiente e seguro quanto o processo de avaliação manual.
+A avaliação de redações automática pode ser realizada utilizando sistemas
+especialistas ou algoritmos de Aprendizado de Máquina. A primeira hipótese 
+dependente essencialmente da presença de especialistas que detem o 
+conhecimento sobre o domínio do problema para desenvolver um conjunto de 
+regras. O sistema especialista deve ser capaz de tomar suas decisões, ou seja, 
+as regras são disparadas para atingir determinada decisão 
+\cite{negnevitsky2005artificial}. Entretanto regras desenvolvidas manualmente 
+tem um processo de manutenção e atualização complexo, o que torna mais difícil 
+a sua utilização em diferentes domínios do problema proposto.
 
-\subsection{Definição do Problema de Pesquisa}
+O uso de algoritmos de Aprendizado de Máquina para valoração de redações é uma
+alternativa ao sistema especialista, exige um menor esforço humano com a 
+abstração simples de extrair padrões ou características, aprender e generalizar.
+Dados os benefícios, a hipótese deste artigo é que um algoritmo de Aprendizado 
+de Máquina pode ser útil e propício a ser utilizada em problemas que envolva a 
+valoração de texto manual por profissionais capacitados. 
 
-Dado um corpus de redações classificar as competências exigidas em um texto de redação do tipo dissertativo-argumentativo.
+Além disso, para avaliar e validar a hipótese o método de construção do 
+conhecimento deste trabalho terá como fundamento o problema de recuperação de 
+padrões na valoração textual. Dado um ``corpus'' de redações o objetivo 
+principal é induzir um modelo a classificar as competências exigidas compondo 
+uma nota avaliativa sobre a redação.
 
-
-\subsection{Objetivos Gerais e Específicos}
-
-Este trabalho tem como objetivo geral aplicar Aprendizado de Máquina na classificação das competências exigidas em um texto de redação do tipo dissertativo-argumentativo.
-
-\subsection{Objetivos Específicos}
-
-O método de construção do conhecimento deste trabalho terá como fundamentos processos de pesquisas relacionadas às áreas descritas. O mesmo será dividido em etapas dentro do escopo geral de forma detalhada e refinada para alcançar o objetivo geral acima, são particularizadas como os seguintes objetivos específicos:
-
-\begin{itemize}
- \item Percorrer o banco de redações, filtrar e coletar redações avaliadas;
- \item Normalizar os textos coletados, separar o tema, título, texto e competências avaliadas em uma estrutura de dados;
- \item Montar um fluxo de trabalho utilizando a ferramenta para mineração de dados \textit{Orange} ~\cite{JMLR:demsar13a};
- \item Ajustar e treinar os modelos classificadores com o corpus de redações; 
- \item Realizar testes de acurácia, \textit{overfitting} e \textit{noise} sobre o modelo induzido;
- \item Representar e comparar graficamente os resultados obtidos;
-\end{itemize}
-
-\subsection{Contribuições}
-
-O presente estudo contribuirá na área do Aprendizado de Máquina e diretamente no processo de classificação de um texto em prosa do tipo dissertativo-argumentativo.
-
-\subsection{Organização do trabalho}
-
-\noindent \textbf{Capitulo \ref{trab_rela}}: Trabalhos Relacionados cita alguns dos trabalhos lidos para  embasamento teórico que serviram de base para solucionar o problema proposto.
-
-\noindent \textbf{Capitulo \ref{fund_teo}}: Fundamentação Teórica apresenta todo o embasamento teórico utilizado para o desenvolvimento do estudo.
-
-\noindent \textbf{Capitulo \ref{meto}}: Método proposto apresenta as etapas passo a passo para desenvolver e resolver o problema proposto deste trabalho.
-
-\noindent \textbf{Capitulo \ref{result}}: Resultados Preliminares apresenta os resultados obtidos do trabalho desta pesquisa.
-
-\noindent \textbf{Capitulo \ref{plano}}: Plano de Trabalho organiza um conjunto de objetivos, processos e etapas que visa a conclusão do trabalho.
-
+O presente estudo com base na proposta do 
+problema descrito contribuirá na área do Aprendizado de Máquina e diretamente 
+no processo de valoração de um texto em prosa do tipo 
+dissertativo-argumentativo.
