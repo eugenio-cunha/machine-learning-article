@@ -5,7 +5,7 @@ Este tópico é destinado a listar uma sequência de trabalhos científicos nas
 áreas abordadas por este estudo com o objetivo de adquirir conhecimento para a
 elaboração do mesmo.
 
-De acordo com \cite{silvio_taynan:2017}, à prova de redação do ENEM é avaliada 
+Segundo \cite{silvio_taynan:2017}, à prova de redação do ENEM é avaliada 
 levando em conta uma matriz de referência listada na Tabela 
 \ref{table:matriz_referencia}. Essa matriz, desenvolvida pelo 
 \cite{edital_enem:2016}, com a colaboração de especialistas, foi elaborada com 
@@ -56,19 +56,19 @@ associados de 0 a 5.
     %  & 5 & \begin{tabular}[c]{@{}l@{}}Elabora muito bem proposta de intervenção, detalhada, relacionada \\ ao tema e articulada à discussão desenvolvida no texto.\end{tabular} \\ \hline
 \end{longtable}
 
-De acordo com \cite{braga:2015}, no texto de redação, o candidato defenderá 
-uma opinião a respeito do tema proposto, de forma coerente e coesa, embasado em 
-argumentos consistentes. O texto será redigido respeitando a escrita formal da 
-Língua Portuguesa. Ao fim, o candidato elabora uma proposta de intervenção 
-social para o problema apresentado no desenvolvimento do texto que respeite os 
-direitos humanos.
+Em um texto de redação, o candidato defenderá uma opinião a respeito do tema 
+proposto, de forma coerente e coesa, embasado em argumentos consistentes. 
+O texto será redigido respeitando a escrita formal da Língua Portuguesa. Ao 
+fim, o candidato elabora uma proposta de intervenção social para o problema 
+apresentado no desenvolvimento do texto que respeite os direitos humanos, 
+segundo o trabalho de \cite{braga:2015}.
 
-Segundo \cite{monard_baranauskas:2003} ``A indução é a forma de inferência 
-lógica que permite obter conclusões genéricas sobre um conjunto particular de 
-exemplos.'' Na indução, um conceito é aprendido efetuando-se inferência 
-indutiva sobre os exemplos apresentados. O aprendizado indutivo pode ser 
-dividido em supervisionado e não-supervisionado como ilustrada a Figura 
-\ref{figure:aprendizado_indutivo}. No aprendizado não-supervisionado, o 
+Em seu estudo \cite{monard_baranauskas:2003} cita: ``A indução é a forma de 
+inferência lógica que permite obter conclusões genéricas sobre um conjunto 
+particular de exemplos.'' Na indução, um conceito é aprendido efetuando-se 
+inferência indutiva sobre os exemplos apresentados. O aprendizado indutivo 
+pode ser dividido em supervisionado e não-supervisionado como ilustrada a 
+Figura \ref{figure:aprendizado_indutivo}. No aprendizado não-supervisionado, o 
 algoritmo de aprendizado analisa os exemplos fornecidos e tenta determinar se 
 alguns deles podem ser agrupados de alguma maneira, formando \textit{clusters} 
 ou agrupamentos. Já no aprendizado supervisionado é fornecido ao algoritmo de 
@@ -84,17 +84,17 @@ algoritmos supervisionado e não-supervisionado.}
 \label{figure:aprendizado_indutivo}
 \end{figure}
 
-De acordo com \cite{porthos_motta:2016}, classificadores são utilizados para a 
-predição de classes de objetos e pode ser dita como o processo de generalização 
-dos dados a partir de diferentes instâncias. Existe uma tendência de se referir 
-a problemas com uma resposta quantitativas como problemas de regressão e 
-aqueles com uma resposta qualitativa como problemas de classificação. Dado um 
-conjunto de exemplos como ilustrado na Figura 
-\ref{figure:processo_classificacao}, os classificadores devem encontrar uma 
-função geral capaz de prever adequadamente as saídas para novos exemplos, após 
-o treinamento, o classificador é avaliado e se necessário o processo de 
-classificação pode ser ajustado usando o conhecimento sobre o domínio do 
-problema para escolher os dados de entrada ao algoritmo de aprendizado.
+Classificadores são utilizados para a predição de classes de objetos e pode ser 
+dita como o processo de generalização dos dados a partir de diferentes 
+instâncias. Existe uma tendência de se referir a problemas com uma resposta 
+quantitativas como problemas de regressão e aqueles com uma resposta 
+qualitativa como problemas de classificação. Dado um conjunto de exemplos como 
+ilustrado na Figura \ref{figure:processo_classificacao}, os classificadores 
+devem encontrar uma função geral capaz de prever adequadamente as saídas para 
+novos exemplos, após o treinamento, o classificador é avaliado e se necessário 
+o processo de classificação pode ser ajustado usando o conhecimento sobre o 
+domínio do problema para escolher os dados de entrada ao algoritmo de 
+aprendizado \cite{porthos_motta:2016}.
 
 \begin{figure}[H]
 \begin{center}
@@ -143,7 +143,7 @@ radical e remoção de termos irrelevantes. Cada documento é  representado como
 um vetor de palavras que ocorrem no documento, especificamente uma tabela 
 atributo-valor. 
 
-Segundo o estudo de \cite{de2017mineraccao}, o classificador Naive Bayes é um 
+Segundo a pesquisa de \cite{de2017mineraccao}, o classificador Naive Bayes é um 
 progenitor probalístico para textos, está entre um dos mais utilizados no 
 Aprendizado de Máquina, devido a seu comportamento simplista que traz bons 
 resultados em muitos casos. Baseado no Teorema de Bayes, criado por Thomas 
@@ -158,59 +158,9 @@ uma técnica de Aprendizado de Máquina que usa diversos classificadores
 fracos com a finalidade de aumentar a acurácia geral. Segundo 
 \cite{dos2015detecccao}, o seu sucesso deve-se ao merito de conseguir 
 adaptar-se aos classificadores base. Neste algoritmo, classificadores são 
-gerados de forma a favorecer os exemplos erroneamente classificados pelos
-classificadores anteriores.
+gerados de forma a ajudar os exemplos incorretamente classificados pelos
+classificadores antecedentes. Este algoritmo aumenta os pesos dos exemplos em 
+que os classificadores anteriores cometeram erros.
 
-
-% Baseado em Boosting
-
-% Boosting é uma técnica de aprendizado de máquina que combina diversos classificadores fracos com o objetivo de melhorar a acurácia geral. Em
-% cada iteração, o algoritmo atualiza os pesos dos exemplos e constrói um
-% classificador adicional. Um esquema simples de votação é utilizado para
-% combinar os classificadores. O algoritmo mais famoso baseado em Boosting
-% é o AdaBoost. Este algoritmo aumenta os pesos dos exemplos em que os
-% classificadores anteriores cometeram erros. Assim, foca o classificador adi-
-% cional nos exemplos mais difı́ceis. Inicialmente, uma distribuição uniforme
-% de pesos é atribuı́da aos exemplos.
-
-% Adaboost
-
-% O emprego de técnicas de mineração de textos pode auxiliar no mapeamento de
-% documentos. Neste escopo, o uso de abordagens de mineração de texto para
-% classificação de documentos é de grande interesse. Uma categoria de algoritmos de
-% aprendizado de máquina que tem sido usada com sucesso para classificação de
-% documentos são os classificadores estatísticos Naive Bayes. Eles se baseiam na
-% aquisição de conhecimento sobre categorias distintas de documentos, a partir da
-% representação interna de um texto em um modelo composto por um conjunto de
-% probabilidades
-
-%  Uma característica atraente desse classificador é a sua capacidade de produzir estimativas de probabilidade ao invés de simples classificações. Isto significa que, para cada rótulo de classe, o classificador pode gerar uma estimativa de o novo objeto pertencer à mesma
-
-
-% Naive-Bayes, por ser um
-% método simples e que traz bons resultados em muitos casos. Esse classificador é denominado ingênuo
-% (naive) por assumir que os atributos são condicionalmente independentes, ou seja, a informação de um
-% evento não se relaciona com os outros eventos (Moraes 2008). As Redes Bayesianas constituem um
-% conjunto de métodos que são derivadas dela e, portanto utilizam os mesmo conceitos de cálculo de
-% probabilidade condicional para obtenção de soluções, essas técnicas derivadas da Rede Bayesiana são
-% denominados Classificadores. Em geral são cinco os Classificadores: Naive-Bayes, Tree augmented
-% Naive-Bayes, Bayesian network augmented Naive-Bayes, Bayesian multi-nets e general Bayesian
-% networks (Cheng e Greiner 2001). 
-
-% Para o problema de classificação de documentos apresentado neste trabalho, o
-% classificador Naive Bayes é construído utilizando dados de treinamento para estimar a
-% probabilidade de um documento pertencer a uma classe. O teorema de Bayes,
-% mostrado no Quadro 1, é utilizado para estimar estas probabilidades 
-
-% Apesar da suposição de independência condicional não ser inteiramente
-% verdadeiro, o algoritmo de Naive Bayes é bastante efetivo 13
-
-% Este objetivo foi relevante para nosso estudo porque sabemos que as condições de
-
-
-% mudar isto tudo
-% Contudo, os artigos citados esclarecem e ajudam à definir o objetivo desta
-% pesquisa, porém deve-se compreender que além de esclarecer de forma teórica todos as
-% caracterı́sticas de um SR, este estudo visa otimizar a recomendação de filmes, utilizando
-% um banco composto por três colunas, usuário, item, avaliação do usuário sobre o item,
-% respectivamente.
+Com a intenção de elucidar este trabalho, a soma das citações informadas ajudam 
+à aborda de forma teórica a natureza desta pesquisa.
