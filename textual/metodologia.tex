@@ -6,11 +6,10 @@ seguintes etapas sequenciais:
 
 \subsection{Coleta de textos}
 
-Para as 
-avaliações experimentais e análises realizadas neste estudo foram coletadas 
-redações de um projeto organizado pelo Brasil Escola, que estimula o estudante 
-a treinar a produção de textos do gênero dissertativo-argumentativo, sugerindo 
-um tema, avaliando e publicando \cite{brasil_escola}. 
+Para as avaliações experimentais e análises realizadas neste estudo foram 
+coletadas redações de dois diferentes projetos que estimulão o estudante a 
+treinar a produção de textos do gênero dissertativo-argumentativo, sugerindo 
+um tema, avaliando e publicando \cite{brasil_escola} e \cite{uol:2017}. 
 
 Nos dias atuais consegue-se facilmente coletar textos de páginas web, para esta 
 tarefa, foi necessário criar um  \textit{crawler}. Existem diversas formas de 
@@ -33,39 +32,66 @@ filtrados, coletados e armazenados.}
 \label{figure:metodologia_1}
 \end{figure}
 
-\subsection{Pré-processamento, indução e testes}
+\subsection{Balanceamento de dados}
 
-A ferramenta de \textit{Data Mining} \textit{Orange} utilizada neste estudo 
-permite o pré-processamento de dados, divisão do \textit{dataset} para 
-treinamento e teste, bem como, a inferência simultanea dos classificadores 
-\textit{Adaboost} e \textit{Naive Bayes}. O resultados das métricas de 
-desempenho obtidos podem ser plotados para avaliação e comparação dos 
-classificadores \cite{wahbeh2011comparison}.
-
-A figura \ref{figure:metodologia_2} ilustra as etapas necessárias para 
-pré-processamento, indução e testes dos algoritmos de Aprendizado de Máquina. 
-Uma vez gerado o \textit{dataset} ná etapa anterior, no primeiro passo os 
-documentos armazenados necessitam de um pré-processamento. Devido a sua 
-natureza textual não estruturada, cada sentença do texto é separada em 
-\textit{tokens} para transformar esses dados não estruturados em um formato 
-estruturado, especificamente uma tabela atributo-valor denominada 
-\textit{bag--of--words}. Nesta abordagem, palavras pouco significativas como 
-artigos, preposições e conjunções que pouco caracterizam os texto podem ser 
-ignoradas com uma ou mais listas de \textit{stopwords}. Segundo 
-\cite{matsubara2003pretext}, este passo é importante, visto que a representação 
-desses textos tem uma influência fundamental no resultado da indução dos 
-algoritmos de Aprendizado de Máquina. No segundo passo é necessário definir os 
-parâmetros de inferência de cada algoritmo e induzir os modelos classificadores 
-\textit{Adaboost} e \textit{Naive Bayes}. O terceiro e último passo, o 
-resultado da inferência dos classificadores são avaliados com as principais 
-métricas de análise de classificadores citadas na literatura de Aprendizado de 
-Máquina. Os passos dois e três são repetidos até que um do classificadores 
-apresente resultados relevantes ao estudo.
+Em muitos domínios, os conjuntos de dados são naturalmente desbalanceados. 
+Dados desbalanceados representam o domínios onde qualquer classes de um grupo 
+de dados está representado por um amplo número de exemplos, enquanto as demais 
+classes são representadas por poucos exemplos.Abordagens a nível de dados 
+equilibram a distribuição das classes no conjunto de dados, usar técnicas como 
+\textit{undersampling} e \textit{oversampling} resolvem o problema do 
+desbalancemento \cite{ferreiraestudo}. A técnica \textit{oversampling} replica 
+de forma aleatória exemplos da classe minoritária, enquanto a técnica 
+\textit{undersampling} utilizada neste estudo, elimina aleatoriamente exemplos 
+da classe majoritária. A figura \ref{figure:metodologia_2} ilustra a etapa onde 
+os dados naturalmente desbalanceados são submetidos a técnica 
+\textit{undersampling} resultando um \textit{dataset} menor e balanceado.
 
 \begin{figure}[H]
 \begin{center}
     \includegraphics[scale=0.70]{images/metodologia_2.png}
 \end{center}
-\caption{O pré-processamento converte os texto em uma tabela }
+\caption{O \textit{dataset} desbalanceado é submetido a técnica
+\textit{undersampling} que gera um \textit{dataset} menor e balanceado.}
 \label{figure:metodologia_2}
+\end{figure}
+
+\subsection{Pré-processamento, inferência indutiva e metricas de desempenho}
+
+A ferramenta de \textit{Data Mining} \textit{Orange} utilizada neste estudo, 
+permite o pré-processamento de dados, divisão do \textit{dataset} para 
+treinamento e teste, bem como, a inferência indutiva simultanea dos 
+classificadores \textit{Adaboost} e \textit{Naive Bayes}. O resultados das 
+métricas de desempenho obtidos podem ser plotados para avaliação e comparação 
+dos classificadores \cite{wahbeh2011comparison}.
+
+A figura \ref{figure:metodologia_3} ilustra as etapas necessárias para 
+pré-processamento, indução e testes dos algoritmos classificadores. Devido a 
+natureza textual não estruturada dos textos contindos no \textit{dataset}, no 
+primeiro passo os documentos armazenados necessitam de um pré-processamento. 
+Cada sentença do texto é separada em \textit{tokens} para transformar esses 
+dados não estruturados em um formato estruturado, especificamente uma tabela 
+atributo-valor, denominada \textit{bag-of-words}. Nesta abordagem, palavras 
+pouco significativas como artigos, preposições e conjunções que pouco 
+caracterizam os texto podem ser ignoradas com uma ou mais listas de 
+\textit{stopwords}. Segundo \cite{matsubara2003pretext}, este passo é 
+importante, visto que a representação desses textos tem uma influência 
+fundamental no resultado da indução dos algoritmos de Aprendizado de Máquina. 
+No segundo passo é necessário definir os parâmetros da inferência indutiva de 
+cada algoritmo e induzir os modelos classificadores \textit{Adaboost} e 
+\textit{Naive Bayes}. O terceiro e último passo, o resultado da inferência dos 
+classificadores são avaliados com as principais métricas de análise de 
+classificadores citadas na literatura de Aprendizado de Máquina. Os passos 
+dois e três são repetidos até que um do classificadores apresente resultados 
+relevantes ao estudo.
+
+\begin{figure}[H]
+\begin{center}
+    \includegraphics[scale=0.70]{images/metodologia_3.png}
+\end{center}
+\caption{O \textit{dataset} balanceado é submetido a técnica 
+\textit{bag-of-words} no pré-processamento, resultando em uma estrutura de 
+atributo-valor utilizada na inferência indutiva do classificadores, por fim, os 
+modelos induzidos são avaliados por métricas de desempenho.}
+\label{figure:metodologia_3}
 \end{figure}
