@@ -56,14 +56,40 @@ os dados naturalmente desbalanceados são submetidos a técnica
 \label{figure:metodologia_2}
 \end{figure}
 
-\subsection{Pré-processamento, inferência indutiva e metricas de desempenho}
+\subsection{Configuração do experimento}
 
-A ferramenta de \textit{Data Mining} \textit{Orange} utilizada neste estudo, 
-permite o pré-processamento de dados, divisão do \textit{dataset} para 
-treinamento e teste, bem como, a inferência indutiva simultanea dos 
-classificadores \textit{Adaboost} e \textit{Naive Bayes}. O resultados das 
-métricas de desempenho obtidos podem ser plotados para avaliação e comparação 
-dos classificadores \cite{wahbeh2011comparison}.
+Dada a matriz de referência do \citeauthor{matriz_referencia_redacao:2016} 
+(\citeyear{matriz_referencia_redacao:2016}), a competência II foi selecionada 
+aleatóriamente como o alvo da inferência indutiva dos classificadores. 
+
+Para avaliar e validar a hipótese proposta, foram gerados resultados sobre dois 
+\textit{datasets} extraidos de fontes diferentes, respectivamente (A, B).
+Dentre as inúmeras possibilidades, não houve variação dos parâmetros de 
+inferência indutiva dos classificadores, a fim de validar a hipótese de 
+recuperar um padrão na valoração de uma redação, isto é, um dos 
+classificadores, conjuntamente o mesmo, deve apresentar métricas de desempenho 
+relevantes em ambos os \textit{datasets}.
+
+Cada \textit{dataset} utilizado na indução foi fracionado em duas partes, esta 
+divisão foi feita pela ferramenta \textit{Orange} com sucessivas reordenações 
+aleatórias, de forma a garantir que ambas a partes tenham uma relação 
+aproximadamente igual de exemplos positivos e negativos.
+
+No fluxo de trabalho (\textit{workflow}) da ferramenta \textit{Orange} a 
+indução dos classificadores normalmente ocorre de forma automática. A aplicação
+monitora o domínio do problema desenvolvido em seu \textit{workflow}, detecta 
+alterações e dispara o gatilho que induz os classificadores automáticamente. 
+Isso permiter facilmente realizar alterações e interpretar os resultados da 
+inferência indutiva dos classificadores \cite{orange_doc}. 
+
+\subsection{Pré-processamento, inferência indutiva e métricas de desempenho}
+
+% A ferramenta de \textit{Data Mining} \textit{Orange} utilizada neste estudo, 
+% permite o pré-processamento de dados, divisão do \textit{dataset} para 
+% treinamento e teste, bem como, a inferência indutiva simultanea dos 
+% classificadores \textit{Adaboost} e \textit{Naive Bayes}. O resultados das 
+% métricas de desempenho obtidos podem ser plotados para avaliação e comparação 
+% dos classificadores \cite{wahbeh2011comparison}.
 
 A figura \ref{figure:metodologia_3} ilustra as etapas necessárias para 
 pré-processamento, indução e testes dos algoritmos classificadores. Devido a 
@@ -74,16 +100,16 @@ dados não estruturados em um formato estruturado, especificamente uma tabela
 atributo-valor, denominada \textit{bag-of-words}. Nesta abordagem, palavras 
 pouco significativas como artigos, preposições e conjunções que pouco 
 caracterizam os texto podem ser ignoradas com uma ou mais listas de 
-\textit{stopwords}. Segundo \cite{matsubara2003pretext}, este passo é 
-importante, visto que a representação desses textos tem uma influência 
-fundamental no resultado da indução dos algoritmos de Aprendizado de Máquina. 
-No segundo passo é necessário definir os parâmetros da inferência indutiva de 
-cada algoritmo e induzir os modelos classificadores \textit{Adaboost} e 
-\textit{Naive Bayes}. O terceiro e último passo, o resultado da inferência dos 
-classificadores são avaliados com as principais métricas de análise de 
-classificadores citadas na literatura de Aprendizado de Máquina. Os passos 
-dois e três são repetidos até que um do classificadores apresente resultados 
-relevantes ao estudo.
+\textit{stopwords}. Segundo \citeauthoronline{matsubara2003pretext} 
+(\citeyear{matsubara2003pretext}), este passo é importante, visto que a 
+representação desses textos tem uma influência fundamental no resultado da 
+indução dos algoritmos de Aprendizado de Máquina. No segundo passo é 
+necessário definir os parâmetros da inferência indutiva de cada algoritmo e 
+induzir os modelos classificadores \textit{Adaboost} e \textit{Naive Bayes}. 
+O terceiro e último passo, o resultado da inferência dos classificadores são 
+avaliados com as principais métricas de análise de classificadores citadas na 
+literatura de Aprendizado de Máquina. Os passos dois e três são repetidos até 
+que um do classificadores apresente resultados relevantes ao estudo.
 
 \begin{figure}[H]
 \begin{center}
