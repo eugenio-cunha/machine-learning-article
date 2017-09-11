@@ -8,13 +8,13 @@ seguintes etapas sequenciais:
 \label{subsection:coleta_texto}
 
 Para as avaliações experimentais e análises realizadas neste estudo foram 
-coletadas redações de dois diferentes projetos que estimulão o estudante a 
+coletadas redações de dois diferentes projetos que estimulam o estudante a 
 treinar a produção de textos do gênero dissertativo-argumentativo, sugerindo 
 um tema, avaliando e publicando \cite{brasil_escola} e \cite{uol:2017}. 
 
-Nos dias atuais consegue-se facilmente coletar textos de páginas web, para esta 
-tarefa, foi necessário criar um  \textit{crawler}. Existem diversas formas de 
-implementar um \textit{crawler}, dentre elas, uma muito utilizada é o 
+Nos dias atuais consegue-se facilmente coletar textos de páginas \textit{web}, 
+para esta tarefa, foi necessário criar um \textit{crawler}. Existem diversas 
+formas de implementar um \textit{crawler}, dentre elas, uma muito utilizada é o 
 \textit{Scrapy}, utilizado neste trabalho \cite{scrapy}. O uso de um 
 \textit{crawler}, permite explorar a estrutura de grafo da \textit{web}, 
 navegar de uma página para outra identificando as \textit{tags} HTML que contém 
@@ -37,18 +37,18 @@ filtrados, coletados e armazenados.}
 \label{subsection:balanceamento_dados}
 
 Em muitos domínios, os conjuntos de dados são naturalmente desbalanceados. 
-Dados desbalanceados representam o domínios onde qualquer classes de um grupo 
+Dados desbalanceados representam o domínio onde qualquer classe de um grupo 
 de dados está representado por um amplo número de exemplos, enquanto as demais 
-classes são representadas por poucos exemplos. Abordagens a nível de dados 
+classes são representadas por poucos exemplos. Abordagens ao nível de dados 
 equilibram a distribuição das classes no conjunto de dados, usar técnicas como 
 \textit{undersampling} e \textit{oversampling} resolvem o problema do 
-desbalancemento de acordo com o estudo de \citeauthoronline{ferreiraestudo} 
+desbalanceamento de acordo com o estudo de \citeauthoronline{ferreiraestudo} 
 (\citeyear{ferreiraestudo}). A técnica \textit{oversampling} replica de forma 
-aleatória exemplos da classe minoritária, enquanto a técnica 
+aleatória, exemplos da classe minoritária, enquanto a técnica 
 \textit{undersampling} utilizada neste estudo, elimina aleatoriamente exemplos 
 da classe majoritária. Além disso, \citeauthoronline{machado2009estudo} 
 (\citeyear{machado2009estudo}) em seu estudo indica o uso das técnicas de 
-limpeza de dados a fim de eliminar os exemplos ruidosos e \textit{limítrofes}, 
+limpeza de dados de modo a, eliminar os exemplos ruidosos e \textit{limítrofes}, 
 respectivamente (\textit{class-label noise}, \textit{borderlines}). A figura 
 \ref{figure:metodologia_2} ilustra a etapa onde os dados naturalmente 
 desbalanceados são submetidos a técnica \textit{undersampling} e limpeza de 
@@ -82,28 +82,28 @@ dados, resultando um \textit{dataset} menor e balanceado.
 
 A ferramenta de \textit{Data Mining} \textit{Orange} utilizada neste estudo, 
 permite o pré-processamento de dados, divisão do \textit{dataset} para 
-treinamento e teste, bem como, a inferência indutiva simultanea dos 
-classificadores \textit{Adaboost} e \textit{Naive Bayes}. O resultados das 
+treinamento e teste, bem como, a inferência indutiva simultânea dos 
+classificadores \textit{Adaboost} e \textit{Naive Bayes}. O resultado das 
 métricas de desempenho obtidos podem ser plotados para avaliação e comparação 
 dos classificadores \cite{wahbeh2011comparison}.
 
 No fluxo de trabalho (\textit{workflow}) da ferramenta \textit{Orange} a 
 indução dos classificadores normalmente ocorre de forma automática. A aplicação
 monitora o domínio do problema desenvolvido em seu \textit{workflow}, detecta 
-alterações e dispara o gatilho que induz os classificadores automáticamente. 
-Isso permiter facilmente realizar alterações e interpretar os resultados da 
+alterações e dispara o gatilho que induz os classificadores automaticamente. 
+Isso permite facilmente realizar alterações e interpretar os resultados da 
 inferência indutiva dos classificadores segundo a documentação, 
 \citeauthoronline{orange_documentation} (\citeyear{orange_documentation}). 
 
 A figura \ref{figure:metodologia_3} ilustra as etapas necessárias para 
-pré-processamento, indução e testes dos algoritmos classificadores. Devido a 
-natureza textual não estruturada dos textos contindos no \textit{dataset}, no 
+pré-processamento, indução e testes dos algoritmos classificadores. Devido à 
+natureza textual não estruturada dos textos contidos no \textit{dataset}, no 
 primeiro passo os documentos armazenados necessitam de um pré-processamento. 
 Cada sentença do texto é separada em \textit{tokens} para transformar esses 
 dados não estruturados em um formato estruturado, especificamente uma tabela 
 atributo-valor, denominada \textit{bag-of-words}. Nesta abordagem, palavras 
 pouco significativas como artigos, preposições e conjunções que pouco 
-caracterizam os texto podem ser ignoradas com uma ou mais listas de 
+caracterizam o texto pode ser ignorada com uma ou mais listas de 
 \textit{stopwords}. Segundo \citeauthoronline{matsubara2003pretext} 
 (\citeyear{matsubara2003pretext}), este passo é importante, visto que a 
 representação desses textos tem uma influência fundamental no resultado da 
@@ -113,7 +113,7 @@ induzir os modelos classificadores \textit{Adaboost} e \textit{Naive Bayes}.
 O terceiro e último passo, o resultado da inferência dos classificadores são 
 avaliados com as principais métricas de análise de classificadores citadas na 
 literatura de Aprendizado de Máquina. Os passos dois e três são repetidos até 
-que um do classificadores apresente resultados relevantes ao estudo.
+que um dos classificadores apresente resultados relevantes ao estudo.
 
 \begin{figure}[H]
 \begin{center}
@@ -129,17 +129,17 @@ modelos induzidos são avaliados por métricas de desempenho.}
 \subsection{Validação cruzada}
 \label{subsection:validacao_cruzada}
 
-Para avaliar e validar a hipótese proposta foi adotada a  metodologia de 
-validação cruzada, ja prevista no próprio ferramenta \textit{Orange}. O estudo 
+Para avaliar e validar a hipótese proposta foi adotada a metodologia de 
+validação cruzada, já prevista na própria ferramenta \textit{Orange}. O estudo 
 de \citeauthoronline{tavares2007estudo} (\citeyear{tavares2007estudo}) explica 
 que esta abordagem consiste em fracionar o \textit{dataset} em \textbf{N} 
 partes (\textit{folds}). Destas, \textbf{N}-1 partes são aplicadas na inferência 
 indutiva e uma amostra é utilizada como base de testes. O método é repetido 
 \textbf{N} vezes, de forma que cada fração seja utilizada apenas uma vez como
-conjunto de testes. por fim, é calculada pela média dos resultados atingidos em 
+conjunto de testes. Por fim, é calculada pela média dos resultados atingidos em 
 cada ciclo, obtendo-se assim uma estimativa da qualidade da inferência 
 induzida, o que permite análises estatísticas. A Figura 
-\ref{figure:metodologia_4} ilustra o fracionamentdo do \textit{dataset} em 
+\ref{figure:metodologia_4} ilustra o fracionamento do \textit{dataset} em 
 \textbf{N} partes, da qual, uma amostra é separada para testes e as demais para 
 inferência indutiva, ao fim, é calculada a média dos resultados obtidos de 
 cada métrica de desempenho. 
