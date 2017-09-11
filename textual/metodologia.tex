@@ -5,6 +5,7 @@ objetivos propostos, o método utilizado para solução do problema é composto 
 seguintes etapas sequenciais:
 
 \subsection{Coleta de textos}
+\label{subsection:coleta_texto}
 
 Para as avaliações experimentais e análises realizadas neste estudo foram 
 coletadas redações de dois diferentes projetos que estimulão o estudante a 
@@ -33,19 +34,25 @@ filtrados, coletados e armazenados.}
 \end{figure}
 
 \subsection{Balanceamento de dados}
+\label{subsection:balanceamento_dados}
 
 Em muitos domínios, os conjuntos de dados são naturalmente desbalanceados. 
 Dados desbalanceados representam o domínios onde qualquer classes de um grupo 
 de dados está representado por um amplo número de exemplos, enquanto as demais 
-classes são representadas por poucos exemplos.Abordagens a nível de dados 
+classes são representadas por poucos exemplos. Abordagens a nível de dados 
 equilibram a distribuição das classes no conjunto de dados, usar técnicas como 
 \textit{undersampling} e \textit{oversampling} resolvem o problema do 
-desbalancemento \cite{ferreiraestudo}. A técnica \textit{oversampling} replica 
-de forma aleatória exemplos da classe minoritária, enquanto a técnica 
+desbalancemento de acordo com o estudo de \citeauthoronline{ferreiraestudo} 
+(\citeyear{ferreiraestudo}). A técnica \textit{oversampling} replica de forma 
+aleatória exemplos da classe minoritária, enquanto a técnica 
 \textit{undersampling} utilizada neste estudo, elimina aleatoriamente exemplos 
-da classe majoritária. A figura \ref{figure:metodologia_2} ilustra a etapa onde 
-os dados naturalmente desbalanceados são submetidos a técnica 
-\textit{undersampling} resultando um \textit{dataset} menor e balanceado.
+da classe majoritária. Além disso, \citeauthoronline{machado2009estudo} 
+(\citeyear{machado2009estudo}) em seu estudo indica o uso das técnicas de 
+limpeza de dados a fim de eliminar os exemplos ruidosos e \textit{limítrofes}, 
+respectivamente (\textit{class-label noise}, \textit{borderlines}). A figura 
+\ref{figure:metodologia_2} ilustra a etapa onde os dados naturalmente 
+desbalanceados são submetidos a técnica \textit{undersampling} e limpeza de 
+dados, resultando um \textit{dataset} menor e balanceado.
 
 \begin{figure}[H]
 \begin{center}
@@ -56,40 +63,37 @@ os dados naturalmente desbalanceados são submetidos a técnica
 \label{figure:metodologia_2}
 \end{figure}
 
-\subsection{Configuração do experimento}
+% Para avaliar e validar a hipótese proposta, foram gerados resultados sobre dois 
+% \textit{datasets} extraidos de fontes diferentes, respectivamente (A, B).
+% Dentre as inúmeras possibilidades, não houve variação dos parâmetros de 
+% inferência indutiva dos classificadores, a fim de validar a hipótese de 
+% recuperar um padrão na valoração de uma redação, isto é, um dos 
+% classificadores, conjuntamente o mesmo, deve apresentar métricas de desempenho 
+% relevantes em ambos os \textit{datasets}.
 
-Dada a matriz de referência do \citeauthor{matriz_referencia_redacao:2016} 
-(\citeyear{matriz_referencia_redacao:2016}), a competência II foi selecionada 
-aleatóriamente como o alvo da inferência indutiva dos classificadores. 
+% O \textit{dataset} utilizado na indução foi fracionado em duas partes, esta 
+% divisão foi feita pela ferramenta \textit{Orange} com sucessivas reordenações 
+% aleatórias, de forma a garantir que ambas a partes tenham uma relação 
+% aproximadamente igual de exemplos positivos e negativos.
 
-Para avaliar e validar a hipótese proposta, foram gerados resultados sobre dois 
-\textit{datasets} extraidos de fontes diferentes, respectivamente (A, B).
-Dentre as inúmeras possibilidades, não houve variação dos parâmetros de 
-inferência indutiva dos classificadores, a fim de validar a hipótese de 
-recuperar um padrão na valoração de uma redação, isto é, um dos 
-classificadores, conjuntamente o mesmo, deve apresentar métricas de desempenho 
-relevantes em ambos os \textit{datasets}.
 
-Cada \textit{dataset} utilizado na indução foi fracionado em duas partes, esta 
-divisão foi feita pela ferramenta \textit{Orange} com sucessivas reordenações 
-aleatórias, de forma a garantir que ambas a partes tenham uma relação 
-aproximadamente igual de exemplos positivos e negativos.
+\subsection{Pré-processamento, inferência indutiva e métricas de desempenho}
+\label{subsection:pre_processamento}
+
+A ferramenta de \textit{Data Mining} \textit{Orange} utilizada neste estudo, 
+permite o pré-processamento de dados, divisão do \textit{dataset} para 
+treinamento e teste, bem como, a inferência indutiva simultanea dos 
+classificadores \textit{Adaboost} e \textit{Naive Bayes}. O resultados das 
+métricas de desempenho obtidos podem ser plotados para avaliação e comparação 
+dos classificadores \cite{wahbeh2011comparison}.
 
 No fluxo de trabalho (\textit{workflow}) da ferramenta \textit{Orange} a 
 indução dos classificadores normalmente ocorre de forma automática. A aplicação
 monitora o domínio do problema desenvolvido em seu \textit{workflow}, detecta 
 alterações e dispara o gatilho que induz os classificadores automáticamente. 
 Isso permiter facilmente realizar alterações e interpretar os resultados da 
-inferência indutiva dos classificadores \cite{orange_doc}. 
-
-\subsection{Pré-processamento, inferência indutiva e métricas de desempenho}
-
-% A ferramenta de \textit{Data Mining} \textit{Orange} utilizada neste estudo, 
-% permite o pré-processamento de dados, divisão do \textit{dataset} para 
-% treinamento e teste, bem como, a inferência indutiva simultanea dos 
-% classificadores \textit{Adaboost} e \textit{Naive Bayes}. O resultados das 
-% métricas de desempenho obtidos podem ser plotados para avaliação e comparação 
-% dos classificadores \cite{wahbeh2011comparison}.
+inferência indutiva dos classificadores segundo a documentação, 
+\citeauthoronline{orange_documentation} (\citeyear{orange_documentation}). 
 
 A figura \ref{figure:metodologia_3} ilustra as etapas necessárias para 
 pré-processamento, indução e testes dos algoritmos classificadores. Devido a 
@@ -120,4 +124,32 @@ que um do classificadores apresente resultados relevantes ao estudo.
 atributo-valor utilizada na inferência indutiva do classificadores, por fim, os 
 modelos induzidos são avaliados por métricas de desempenho.}
 \label{figure:metodologia_3}
+\end{figure}
+
+\subsection{Validação cruzada}
+\label{subsection:validacao_cruzada}
+
+Para avaliar e validar a hipótese proposta foi adotada a  metodologia de 
+validação cruzada, ja prevista no próprio ferramenta \textit{Orange}. O estudo 
+de \citeauthoronline{tavares2007estudo} (\citeyear{tavares2007estudo}) explica 
+que esta abordagem consiste em fracionar o \textit{dataset} em \textbf{N} 
+partes (\textit{folds}). Destas, \textbf{N}-1 partes são aplicadas na inferência 
+indutiva e uma amostra é utilizada como base de testes. O método é repetido 
+\textbf{N} vezes, de forma que cada fração seja utilizada apenas uma vez como
+conjunto de testes. por fim, é calculada pela média dos resultados atingidos em 
+cada ciclo, obtendo-se assim uma estimativa da qualidade da inferência 
+induzida, o que permite análises estatísticas. A Figura 
+\ref{figure:metodologia_4} ilustra o fracionamentdo do \textit{dataset} em 
+\textbf{N} partes, da qual, uma amostra é separada para testes e as demais para 
+inferência indutiva, ao fim, é calculada a média dos resultados obtidos de 
+cada métrica de desempenho. 
+
+\begin{figure}[H]
+\begin{center}
+    \includegraphics[scale=0.50]{images/metodologia_4.png}
+\end{center}
+\caption{O \textit{dataset} balanceado é fracionados en N partes, sendo uma 
+parte separada para testes e as demais utilizada na indução dos classificadores, 
+por fim, é calculada a média dos resultados obtidos.}
+\label{figure:metodologia_4}
 \end{figure}

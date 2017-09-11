@@ -1,2 +1,22 @@
 \section{Discussão}
-Texto texto texto ...
+
+Primeiramente, como citado na \autoref{section:trabalhos_relacionados} foi 
+utilizada a ferramenta de \textit{Data Mining Orange}, devido a sua boa 
+classificação quanto as principais utilizadas no meio acadêmico, a capacidade 
+de inferência indutiva sobre os classificadores \textit{Naive Bayes} e 
+\textit{Adaboost} e por fim, por ser desenvolvida sobre a 
+\textit{framework scikit-learn}, uma importante \textit{framework open-source} 
+de \textit{Machine Learning} fortemente utilizada no desenvolvimeto de 
+aplicaçõe \cite{scikit-learn}.
+
+Na \autoref{subsection:pre_processamento} e explicado o uso da abordagem
+\textit{bag-of-words}, apesar de inumeráveis configurações possíveis sobre este 
+método, o mesmo foi utilizado em sua forma canônica, por fim, o objetivo era de 
+não interfirir na assinatura do padrão encontrado no texto.
+
+Conforme foi explicado na \autoref{subsection:validacao_cruzada} na validação 
+cruzada, o \textit{dataset} balanceado foi dividido em dez partes iguais. Em 
+teste anteriores foi observado, que devido a um número limitado de textos no 
+\textit{dataset}, a quantidade superior a dez partições não influenciava 
+diretamente os resultados das métricas de desempenho, entretanto onerava 
+consideravelmente o tempo de inferência indutiva dos classificadores.
