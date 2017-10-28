@@ -97,11 +97,12 @@
 
 
 % sections
+
 \renewcommand\section{\@startsection{section}{1}{\z@}%
                        {-6\p@ \@plus -4\p@ \@minus -4\p@}%
                        {0\p@ \@plus 4\p@ \@minus 4\p@}%
                        {\normalfont\XIIIPT\bfseries\boldmath
-                        \rightskip=\z@ \@plus 8em\pretolerance=10000 }}
+                        \rightskip=\z@ \@plus 8em\pretolerance=10 }}
 
 \renewcommand\subsection{\@startsection{subsection}{2}{\z@}%
                        {-6\p@ \@plus -4\p@ \@minus -4\p@}%
@@ -153,6 +154,16 @@
                                     \bfseries\itshape Abstract.]\itshape}%
       {\endlist}
 
+\newenvironment{keywords}{
+      \list{}{\advance\topsep by8pt
+      \leftmargin=0cm
+      \labelwidth=\z@
+      \listparindent=\z@
+      \itemindent\listparindent
+      \rightmargin\leftmargin}\item[\hskip\labelsep
+                                    \bfseries keywords: ]}%
+      {\endlist}
+
 \newenvironment{resumo}{%
       \list{}{\advance\topsep by6pt\relax%\small
       \leftmargin=0.8cm
@@ -161,4 +172,14 @@
       \itemindent\listparindent
       \rightmargin\leftmargin}\item[\hskip\labelsep
                                     \bfseries\itshape Resumo.]\itshape}%
+      {\endlist}
+
+\newenvironment{palavrachave}{%
+      \list{}{\advance\topsep by8pt
+      \leftmargin=0cm
+      \labelwidth=\z@
+      \listparindent=\z@
+      \itemindent\listparindent
+      \rightmargin\leftmargin}\item[\hskip\labelsep
+                                    \bfseries Palavras-chave: ]}%
       {\endlist}

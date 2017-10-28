@@ -1,4 +1,4 @@
-\documentclass[12pt, a4paper]{article}
+\documentclass{article}
 
 \include{packages}
 \include{commands}
@@ -11,21 +11,22 @@
 \begin{document} 
 
 \maketitle
-
+% \thispagestyle{empty}
 % usar para citar
 % \citeauthoronline{machado2009estudo}
 % \citeauthor{machado2009estudo}
 % \citeyear{machado2009estudo}
-
+    
 \input{textual/abstract}
 \input{textual/resumo}
+
 \input{textual/introducao}
 \input{textual/trabalhos-relacionados}
 \input{textual/metodologia}
 \input{textual/resultados}
 \input{textual/discussao}
 \input{textual/conclusao}
-% \input{textual/trabalhos-futuros}
+\input{textual/trabalhos-futuros}
 % \input{textual/consideracoes-finais}
 
 \bibliography{references}

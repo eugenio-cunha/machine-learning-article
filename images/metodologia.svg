@@ -173,9 +173,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.39"
-     inkscape:cx="1896.5355"
-     inkscape:cy="652.28106"
+     inkscape:zoom="0.45014485"
+     inkscape:cx="1648.5009"
+     inkscape:cy="-432.79571"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -2083,10 +2083,12 @@
        id="g17111"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96"
-       transform="translate(-205.61281,108.38489)">
+       transform="matrix(0.97026756,0,0,0.97026756,-181.53167,114.63577)">
       <g
-         transform="matrix(0.28143464,0,0,-0.28143464,341.24864,144.3873)"
-         id="g5257">
+         transform="matrix(0.28778011,0,0,-0.28778011,758.34776,381.27796)"
+         id="g5257"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96">
         <g
            id="g5259">
           <g
@@ -2660,19 +2662,23 @@
         </g>
       </g>
       <text
-         y="126.1347"
-         x="360.83032"
+         y="362.61383"
+         x="778.37097"
          id="text5621"
-         style="font-variant:normal;font-weight:bold;font-size:2.80382085px;font-family:'Nimbus Sans L';-inkscape-font-specification:NimbusSanL-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.28143466">
+         style="font-variant:normal;font-weight:bold;font-size:2.86703801px;font-family:'Nimbus Sans L';-inkscape-font-specification:NimbusSanL-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.28778011"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96">
         <tspan
-           style="stroke-width:0.28143466"
+           style="stroke-width:0.28778011"
            id="tspan5619"
-           y="126.1347"
-           x="360.83032">.</tspan>
+           y="362.61383"
+           x="778.37097">.</tspan>
       </text>
       <g
-         transform="matrix(0.28143464,0,0,-0.28143464,195.35687,143.68081)"
-         id="g12224">
+         transform="matrix(0.28778011,0,0,-0.28778011,609.16659,380.55554)"
+         id="g12224"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96">
         <g
            id="g12226">
           <g
@@ -3251,24 +3257,30 @@
         </g>
       </g>
       <rect
-         ry="3.1358948"
-         y="94.285988"
-         x="179.74121"
-         height="63.288059"
-         width="71.173965"
+         ry="3.2065992"
+         y="330.04703"
+         x="593.19879"
+         height="64.715012"
+         width="72.778709"
          id="rect5016-7-7"
-         style="fill:none;fill-opacity:1;stroke:#323638;stroke-width:0.66046095;stroke-linejoin:round;stroke-miterlimit:47.5;stroke-dasharray:none;stroke-dashoffset:11.30078697;stroke-opacity:1;paint-order:normal" />
+         style="fill:none;fill-opacity:1;stroke:#323638;stroke-width:0.67535228;stroke-linejoin:round;stroke-miterlimit:47.5;stroke-dasharray:none;stroke-dashoffset:11.30078697;stroke-opacity:1;paint-order:normal"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
       <rect
-         ry="3.1358948"
-         y="94.285988"
-         x="325.63306"
-         height="63.288059"
-         width="71.173965"
+         ry="3.2065992"
+         y="330.04703"
+         x="742.38007"
+         height="64.715012"
+         width="72.778709"
          id="rect5016-7-7-3"
-         style="fill:none;fill-opacity:1;stroke:#323638;stroke-width:0.66046095;stroke-linejoin:round;stroke-miterlimit:47.5;stroke-dasharray:none;stroke-dashoffset:11.30078697;stroke-opacity:1;paint-order:normal" />
+         style="fill:none;fill-opacity:1;stroke:#323638;stroke-width:0.67535228;stroke-linejoin:round;stroke-miterlimit:47.5;stroke-dasharray:none;stroke-dashoffset:11.30078697;stroke-opacity:1;paint-order:normal"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
       <g
-         transform="matrix(0.17027324,0,0,0.17027324,253.35032,120.58523)"
-         id="g6660-4-3-6">
+         transform="matrix(0.17411237,0,0,0.17411237,668.46761,356.93924)"
+         id="g6660-4-3-6"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96">
         <path
            inkscape:connector-curvature="0"
            d="M 54.721993,31.208662 H 3.6173688"
@@ -3284,8 +3296,10 @@
            style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#333333;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1" />
       </g>
       <g
-         transform="matrix(0.21107598,0,0,0.21107598,267.44678,104.82242)"
-         id="g14874">
+         transform="matrix(0.21583508,0,0,0.21583508,682.8819,340.82102)"
+         id="g14874"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96">
         <g
            id="New_Symbol" />
         <g
@@ -3361,7 +3375,7 @@
                id="g14786">
               <polygon
                  style="fill:#1d1d1b"
-                 points="50.1,86.1 50.1,143.6 47.6,143.6 47.6,83.6 69.3,83.6 69.3,86.1 "
+                 points="47.6,83.6 69.3,83.6 69.3,86.1 50.1,86.1 50.1,143.6 47.6,143.6 "
                  id="polygon14784" />
             </g>
           </g>
@@ -3371,7 +3385,7 @@
                id="g14792">
               <polygon
                  style="fill:#1d1d1b"
-                 points="152.4,83.6 152.4,113.5 149.9,113.5 149.9,86.1 130.7,86.1 130.7,83.6 "
+                 points="149.9,86.1 130.7,86.1 130.7,83.6 152.4,83.6 152.4,113.5 149.9,113.5 "
                  id="polygon14790" />
             </g>
           </g>
@@ -3428,8 +3442,10 @@
         </g>
       </g>
       <g
-         transform="matrix(0.17027324,0,0,0.17027324,312.98949,120.58523)"
-         id="g6660-4-3-6-4">
+         transform="matrix(0.17411237,0,0,0.17411237,729.45146,356.93924)"
+         id="g6660-4-3-6-4"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96">
         <path
            inkscape:connector-curvature="0"
            d="M 54.721993,31.208662 H 3.6173688"
@@ -3445,46 +3461,60 @@
            style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#333333;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1" />
       </g>
       <rect
-         ry="3.1425724"
-         y="94.218613"
-         x="266.05609"
-         height="63.422821"
-         width="44.99651"
+         ry="3.2134275"
+         y="329.97812"
+         x="681.45984"
+         height="64.852806"
+         width="46.01104"
          id="rect5016-7-7-4"
-         style="fill:none;fill-opacity:1;stroke:#323638;stroke-width:0.52569991;stroke-linejoin:round;stroke-miterlimit:47.5;stroke-dasharray:none;stroke-dashoffset:11.30078697;stroke-opacity:1;paint-order:normal" />
+         style="fill:none;fill-opacity:1;stroke:#323638;stroke-width:0.53755277;stroke-linejoin:round;stroke-miterlimit:47.5;stroke-dasharray:none;stroke-dashoffset:11.30078697;stroke-opacity:1;paint-order:normal"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
       <text
          id="text6875-0-3"
-         y="170.60832"
-         x="179.11279"
-         style="font-style:normal;font-weight:normal;font-size:6.11200142px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.15280004"
-         xml:space="preserve"><tspan
-           style="stroke-width:0.15280004"
-           y="170.60832"
-           x="179.11279"
+         y="408.09018"
+         x="587.6864"
+         style="font-style:normal;font-weight:normal;font-size:6.24980783px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1562452"
+         xml:space="preserve"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96"><tspan
+           style="stroke-width:0.1562452"
+           y="408.09018"
+           x="587.6864"
            id="tspan6873-62-6"
-           sodipodi:role="line">Dataset desbalanceado</tspan></text>
+           sodipodi:role="line"><tspan
+   style="font-style:italic;stroke-width:0.1562452"
+   id="tspan5721">“Dataset”</tspan> desbalanceado</tspan></text>
       <text
          id="text6875-8-6-1"
-         y="170.01591"
-         x="265.34784"
-         style="font-style:normal;font-weight:normal;font-size:6.11200142px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.15280004"
-         xml:space="preserve"><tspan
-           style="stroke-width:0.15280004"
-           y="170.01591"
-           x="265.34784"
+         y="407.48441"
+         x="677.48901"
+         style="font-style:normal;font-weight:normal;font-size:6.24980783px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1562452"
+         xml:space="preserve"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96"><tspan
+           style="stroke-width:0.1562452"
+           y="407.48441"
+           x="677.48901"
            id="tspan6873-6-1-0"
-           sodipodi:role="line">Undersampling</tspan></text>
+           sodipodi:role="line">“<tspan
+   style="font-style:italic;stroke-width:0.1562452"
+   id="tspan5723">Undersampling</tspan>”</tspan></text>
       <text
          id="text6875-8-8-8-6"
-         y="170.60832"
-         x="330.4183"
-         style="font-style:normal;font-weight:normal;font-size:6.11200142px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.15280004"
-         xml:space="preserve"><tspan
-           style="stroke-width:0.15280004"
-           y="170.60832"
-           x="330.4183"
+         y="408.09018"
+         x="742.9444"
+         style="font-style:normal;font-weight:normal;font-size:6.24980783px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1562452"
+         xml:space="preserve"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96"><tspan
+           style="stroke-width:0.1562452"
+           y="408.09018"
+           x="742.9444"
            id="tspan6873-6-8-7-3"
-           sodipodi:role="line">Dataset balanceado</tspan></text>
+           sodipodi:role="line">“<tspan
+   style="font-style:italic;stroke-width:0.1562452"
+   id="tspan5725">Dataset</tspan>” balanceado</tspan></text>
     </g>
     <g
        id="g11854"
