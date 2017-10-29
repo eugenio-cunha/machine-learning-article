@@ -59,7 +59,7 @@ dados, resultando um \textit{dataset} menor e balanceado.
 \label{figure:metodologia_2}
 \end{figure}
 
-\newpage
+% \newpage
 \subsection{Pré-processamento, inferência indutiva e métricas de desempenho}
 \label{subsection:pre_processamento}
 
@@ -94,24 +94,23 @@ modelos induzidos são avaliados por métricas de desempenho.}
 \label{figure:metodologia_3}
 \end{figure}
 
-\newpage
+% \newpage
 \subsection{Validação cruzada}
 \label{subsection:validacao_cruzada}
 
 Para avaliar e validar a hipótese proposta foi adotada a metodologia de 
-validação cruzada, já prevista na própria ferramenta \textit{Orange}. O estudo 
-de \citeauthoronline{tavares2007estudo} (\citeyear{tavares2007estudo}) explica 
-que esta abordagem consiste em fracionar o \textit{dataset} em \textbf{N} 
-partes (\textit{folds}). Destas, \textbf{N}-1 partes são aplicadas na inferência 
-indutiva e uma amostra é utilizada como base de testes. O método é repetido 
-\textbf{N} vezes, de forma que cada fração seja utilizada apenas uma vez como
-conjunto de testes. Por fim, é calculada pela média dos resultados atingidos em 
-cada ciclo, obtendo-se assim uma estimativa da qualidade da inferência 
-induzida, o que permite análises estatísticas. A Figura 
-\ref{figure:metodologia_4} ilustra o fracionamento do \textit{dataset} em 
-\textbf{N} partes, da qual, uma amostra é separada para testes e as demais para 
-inferência indutiva, ao fim, é calculada a média dos resultados obtidos de 
-cada métrica de desempenho. 
+validação cruzada. O estudo de \citeauthoronline{tavares2007estudo} 
+(\citeyear{tavares2007estudo}) explica que esta abordagem consiste em 
+fracionar o \textit{dataset} em \textbf{N} partes (\textit{folds}). Destas, 
+\textbf{N}-1 partes são aplicadas na inferência indutiva e uma amostra é 
+utilizada como base de testes. O método é repetido \textbf{N} vezes, de 
+forma que cada fração seja utilizada apenas uma vez como conjunto de testes. 
+Por fim, é calculada pela média dos resultados atingidos em cada ciclo, 
+obtendo-se assim uma estimativa da qualidade da inferência induzida, o que 
+permite análises estatísticas. A Figura \ref{figure:metodologia_4} ilustra o 
+fracionamento do \textit{dataset} em \textbf{N} partes, da qual, uma amostra é 
+separada para testes e as demais para inferência indutiva, ao fim, é calculada 
+a média dos resultados obtidos de cada métrica de desempenho. 
 
 \begin{figure}[H]
 \begin{center}

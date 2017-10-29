@@ -1,14 +1,11 @@
 \section{Discussão}
 
-Na \autoref{subsection:pre_processamento} e explicado o uso da abordagem
-\textit{bag-of-words}, apesar de inumeráveis configurações possíveis sobre este 
-método, o mesmo foi utilizado em sua forma canônica, por fim, o objetivo era de 
-não interfirir na assinatura do padrão encontrado no texto.
-
-Conforme foi explicado na \autoref{subsection:validacao_cruzada} na validação 
-cruzada, o \textit{dataset} balanceado foi dividido em dez partes iguais. Em 
-testes anteriores foi observado, que devido a um número limitado de textos no 
-\textit{dataset}, a quantidade superior as dez partições não influenciava 
-diretamente os resultados das métricas de desempenho, entretanto, onerava 
-consideravelmente o tempo de inferência indutiva dos classificadores.
-
+Como explicado antes, a definição de um melhor algoritmo entre os analisados é 
+inviável, e não faz parte da proposta deste trabalho. Entretanto o 
+classificador \textit{Naive Bayes} apresentou um resultado significativamente 
+maior, no entanto isto não significa que tal algoritmo seja de fato seja melhor 
+que o \textit{Adaboost}, todavia, atestou a hipótese proposta e demonstrou que 
+ambos os algoritmos, que possuem logica de predição destintas, quando 
+induzidos, recuperam padrões implícitos no texto da redação. Contudo, as 
+métricas aqui calculadas poderão ser utilizadas para guiar uma escolha de 
+algoritmos para elaboração de trabalhos futuros.

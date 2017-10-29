@@ -8,12 +8,25 @@ estudo utilizou as principais métricas da literatura para análise de desempenh
 dos classificadores.
 
 \subsection{Configuração do experimento}
+\label{subsection:configuracao}
 
-Dada a matriz de referência do \citeauthor{edital_enem:2016} 
+\textbf{Alvo} -- Dada a matriz de referência do \citeauthor{edital_enem:2016} 
 (\citeyear{edital_enem:2016}), a competência III foi selecionada 
 aleatoriamente como o alvo da inferência indutiva dos classificadores.
 
+\textbf{Naive Bayes} -- Para o algoritmo Naive Bayes não foi preciso ajustar os
+parâmetros pois ele é não paramétrico.
+
+\textbf{AdaBoost} -- O Classificador base utilizado pelo AdaBoost foi a
+Árvore de decisão, com uma taxa de aprendizado configurado em 1,0 (um) e o 
+número de iterações foi ajustado para 50 (cinquenta).
+
+\textbf{Validação cruzada} -- O \textit{dataset} foi divididos em 10 conjuntos 
+disjuntos com 69 textos. Os classificadores são treinados 10 vezes, cada 
+vez com um conjunto diferente sendo deixado de fora para fazer a validação.
+
 \subsection{Disposição das classes no \textit{dataset}}
+\label{subsection:balanceamento}
 
 Dada as 6.663 redações coletadas originalmente, com temas diversificados que 
 passaram em um processo de avaliação manual com diferentes avaliadores, a 
@@ -28,7 +41,7 @@ aplicação dos métodos de balanceamento e limpeza de dados, filtrou um segundo
         \begin{axis}[
                 ybar,
                 width=15cm,
-                height=10cm,
+                height=8cm,
                 symbolic x coords={0.00,0.50,1.00,1.50,2.00},
                 legend style={at={(0.7,0.9)},anchor=north west},
                 bar width=11pt,
@@ -82,11 +95,6 @@ aplicação dos métodos de balanceamento e limpeza de dados, filtrou um segundo
                 (2.00,119)
             };
 
-            % \node [above] at (axis cs:  0.00,138) {138};
-            % \node [above] at (axis cs:  0.50,138) {138};
-            % \node [above] at (axis cs:  1.00,138) {138};
-            % \node [above] at (axis cs:  1.50,138) {138};
-            % \node [above] at (axis cs:  2.00,138) {138};
         \end{axis}
     \end{tikzpicture}
     \caption{Distribuição das classes sobre a competência III de 690 redações 
@@ -95,10 +103,6 @@ aplicação dos métodos de balanceamento e limpeza de dados, filtrou um segundo
     \label{graphic:dataset_balanced}
     \end{center}
 \end{figure}
-
-A quantidade de exemplos da competência III obtidos no \textit{dataset} pode 
-apresentar-se de uma certa forma modesta, entretanto, normalmente é 
-suficientemente para produzir resultados relevantes na validação cruzada.
 
 \subsection{Resultado da inferência indutiva}
 
@@ -114,7 +118,7 @@ nota-se que em relação ao algoritmo \textit{Adaboost}, a indução do
     \begin{center}
         \begin{tikzpicture}
         \begin{axis}[width=15cm, 
-            height=10cm, 
+            height=8cm, 
             grid=both, 
             ymin=0.000,
             ymax=0.900,
@@ -161,7 +165,7 @@ deste ponto avalia-se que o poder de discriminação das classes do algoritmo
     \begin{center}
         \begin{tikzpicture}
         \begin{axis}[width=15cm, 
-            height=10cm, 
+            height=8cm, 
             grid=both, 
             ymin=0.000,
             ymax=0.900,
