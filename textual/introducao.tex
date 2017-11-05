@@ -2,13 +2,12 @@
 \section{Introdução}
 
 O desenvolvimento de uma redação é uma atividade prática, presente na 
-cultura civilizada desde a invenção da escrita. \citeauthoronline{lara:1995} 
-(\citeyear{lara:1995}), explica em seu trabalho, que com o fim da ditadura 
-iniciou-se processo de redemocratização, que consequentemente, restitui a 
-palavra ao estudante. O decreto 79 298, de 24 de fevereiro de 1977, definiu a 
-volta da redação à escola, pela ``inclusão obrigatória da prova ou questão de 
-redação em língua portuguesa'' nos concursos e vestibulares 
-(Art. 1º, alínea d).
+cultura civilizada desde a invenção da escrita. \citeonline{lara:1995}, 
+explica em seu trabalho, que com o fim da ditadura iniciou-se processo de 
+redemocratização, que consequentemente, restitui a palavra ao estudante. 
+O decreto 79 298, de 24 de fevereiro de 1977, definiu a volta da redação à 
+escola, pela ``inclusão obrigatória da prova ou questão de redação em língua 
+portuguesa'' nos concursos e vestibulares (Art. 1º, alínea d).
 
 A prova de redação tem sido utilizada de forma ampla em concursos, vestibulares 
 e exames, tal como o ENEM, hoje o maior exame do Brasil, que no ano de 2016, 
@@ -17,39 +16,38 @@ externos, na correção de 5 825 134 redações, segundo o relatório de gestão
 \citeauthor{relatorio_de_gestao:2016} (\citeyear{relatorio_de_gestao:2016}). 
 Com o advento do ENEM ser um requisito para o processo seletivo de acesso às 
 inúmeras universidades públicas ~\cite{sisu:2017} e a importantes programas de 
-governo ~\cite{csf:2017}, este número tem aumentado, incessantemente. Devido à 
-grande quantidade de redações produzidas, torna-se humanamente difícil e caro, 
-organizar e avaliar as competências de uma redação manualmente.
+governo ~\cite{csf:2017}, este número tem aumentado, incessantemente.
 
 Com o processamento computacional mais barato e poderoso, a crescente variedade 
 e volume de dados disponíveis e o armazenamento de forma acessível, o 
 Aprendizado de Máquina está no centro de muitos avanços tecnológicos, 
 alcançando as áreas, antes exclusivas de seres humanos. Os carros autônomos do
-projeto \citeauthor{waymo:2017} (~\citeyear{waymo:2017}) são o exemplo de uma 
-atividade, antes exclusivamente humana, hoje exercida e aperfeiçoada por 
-algoritmos de Aprendizado de Máquina. 
+projeto \citeonline{waymo:2017} são o exemplo de uma atividade, antes 
+exclusivamente humana, hoje exercida e aperfeiçoada por algoritmos de 
+Aprendizado de Máquina. 
 
 A avaliação automática de redações pode ser realizada utilizando sistemas
 especialistas ou algoritmos de Aprendizado de Máquina. A primeira hipótese, 
 dependente essencialmente da presença de especialistas, que detêm o 
 conhecimento sobre o domínio do problema para desenvolver um conjunto de 
-regras. \citeauthoronline{negnevitsky2005artificial} 
-(\citeyear{negnevitsky2005artificial}), explica que o sistema especialista deve 
-ser capaz de tomar suas decisões, ou seja, as regras são disparadas para 
-atingir determinadas opções. Entretanto, regras desenvolvidas manualmente, 
-tem um processo de manutenção e atualização complexo, o que torna difícil a sua 
-utilização em diferentes domínios do problema proposto. O uso de algoritmos de 
-Aprendizado de Máquina, na valoração de redações, é uma alternativa ao sistema 
-especialista, exige menor esforço humano, com a simples abstração de extrair 
-padrões ou características, aprender e generalizar. 
+regras. \citeonline{negnevitsky2005artificial}, explica que o sistema 
+especialista deve ser capaz de tomar suas decisões, ou seja, as regras são 
+disparadas para atingir determinadas opções. Entretanto, regras desenvolvidas 
+manualmente, tem um processo de manutenção e atualização complexo, o que torna 
+difícil a sua utilização em diferentes domínios do problema proposto. O uso de 
+algoritmos de Aprendizado de Máquina, na valoração de redações, é uma 
+alternativa ao sistema especialista, exige menor esforço humano, com a simples 
+abstração de extrair padrões ou características, aprender e generalizar. 
 
-Dados os benefícios, a hipótese deste artigo é que um algoritmo de Aprendizado 
-de Máquina pode ser útil e propício, a ser utilizado em problemas que envolva a 
-valoração de textos. Para avaliar e validar a hipótese, o método de construção 
-do conhecimento deste estudo terá como fundamento o problema da recuperação 
-de padrões, na valoração textual. Dado um \textit{corpus} de redações o objetivo 
-principal é induzir um modelo a classificar automaticamente uma competência 
-exigida em um texto de redação. 
+Devido à grande quantidade de redações produzidas em concursos, vestibulares 
+e exames, torna-se humanamente difícil e caro, organizar e avaliar as 
+competências de uma redação manualmente, a hipótese deste artigo é que um 
+algoritmo de Aprendizado de Máquina pode ser útil e propício, a ser utilizado 
+em problemas que envolva a valoração de textos. Para avaliar e validar a 
+hipótese, o método de construção do conhecimento deste estudo terá como 
+fundamento o problema da recuperação de padrões, na valoração textual. Dado um 
+\textit{corpus} de redações o objetivo principal é induzir um modelo a 
+classificar automaticamente uma competência exigida em um texto de redação. 
 
 Além disso, o presente estudo, com base na proposta do problema descrito, 
 contribuirá na área do Aprendizado de Máquina e diretamente no processo de 
