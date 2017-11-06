@@ -5,8 +5,8 @@
 ENEM, é avaliada considerando uma matriz de referência do 
 \citeauthor{edital_enem:2016} (\citeyear{edital_enem:2016}), desenvolvida com a 
 colaboração de especialistas, com o objetivo de operacionalizar o exame. A 
-matriz apresenta cinco competências, para cada competência expressa para 
-redação, existem níveis de conhecimento associados de 0 a 5. Conforme 
+matriz apresenta cinco competências, para cada competência expressa, 
+existem níveis de conhecimento associados de 0 a 5. Conforme 
 \citeonline{braga:2015} demonstra na sua pesquisa, num texto de redação, o 
 candidato defenderá uma opinião a respeito do tema proposto, de forma coerente 
 e coesa, apoiado em argumentos consistentes. O texto será redigido a respeitar 
@@ -14,9 +14,9 @@ a escrita formal da Língua Portuguesa. Ao fim, o candidato deve elaborar uma
 proposta de intervenção social para o problema apresentado no desenvolvimento 
 do texto, respeitando os direitos humanos.
 
-Em sua pesquisa \citeonline{monard_baranauskas:2003} cita: ``A indução é a 
+Em sua pesquisa \citeonline{monard_baranauskas:2003} explica, a indução é a 
 forma de inferência lógica que permite obter conclusões genéricas sobre um 
-conjunto particular de exemplos'', ou seja, na indução, um conceito é aprendido 
+conjunto particular de exemplos, ou seja, na indução, um conceito é aprendido 
 efetuando-se inferência indutiva sobre as amostras apresentadas. O aprendizado 
 indutivo pode ser dividido em supervisionado e não supervisionado como 
 ilustrada a Figura \ref{figure:aprendizado_indutivo}. No aprendizado não 
@@ -36,16 +36,16 @@ algoritmos supervisionado e não-supervisionado.}
 \end{figure}
 
 Classificadores são utilizados para a predição de classes de objetos e pode ser 
-dito como o processo de generalização dos dados a partir de diferentes 
+dito, como o processo de generalização dos dados a partir de diferentes 
 instâncias. Existe uma tendência de se referir a problemas com respostas 
 quantitativas como ``problemas de regressão'' e aqueles com uma saída 
 qualitativa como ``problemas de classificação''. Dado um conjunto de exemplos 
 como ilustrado na Figura \ref{figure:processo_classificacao}, os 
-classificadores devem encontrar uma função geral capaz de prever adequadamente 
+classificadores devem encontrar uma função geral, capaz de prever adequadamente 
 as saídas para novas amostras. Após o treinamento, o classificador é avaliado e 
 se necessário o processo de classificação pode ser ajustado usando o 
 conhecimento sobre o domínio do problema, conforme 
-\citeonline{porthos_motta:2016} explica na sua pesquisa.
+\citeonline{porthos_motta:2016} explica em seu estudo.
 
 \begin{figure}[H]
 \begin{center}
@@ -57,12 +57,13 @@ o conhecimento do domínio para obter um melhor resultado.}
 \label{figure:processo_classificacao}
 \end{figure}
 
-No processo de mineração de dados, \citeonline{matsubara2003pretext}, descrevem 
-que na etapa de pré-processamento de textos, um dos métodos geralmente adotado 
-é a representação usando a abordagem ``bag-of-words'', uma das representações 
-estruturadas mais simples. Utiliza técnicas de redução do termo ao seu radical 
-e remoção de termos irrelevantes. Cada documento é representado como um vetor 
-de palavras que ocorrem no texto, especificamente uma tabela atributo-valor. 
+No processo de mineração de dados, \citeonline{matsubara2003pretext}, explicam, 
+que na etapa de pré-processamento de textos, um dos métodos geralmente adotado, 
+é a representação usando a abordagem \textit{bag-of-words}, uma das 
+representações estruturadas mais simples. Utiliza técnicas de redução do termo 
+ao seu radical e remoção de termos irrelevantes. Cada documento é representado 
+como um vetor de palavras que ocorrem no texto, especificamente uma tabela 
+atributo-valor. 
 
 O algoritmo Naive Bayes destaca-se entre os classificadores devido ao seu 
 comportamento simplista, traz bons resultados em muitos casos. Baseado no 
@@ -84,8 +85,8 @@ as variáveis (``features''), ou seja, se determinada fruta é considerada uma
 ``Maçã'' se ela for ``Vermelha'', ``Redonda'' e possui ``cerca de 10 cm 
 de diâmetro'', o algoritmo não vai considerar a correlação entre esses fatores, 
 tratando cada um de forma independente. 
-\citeonline{chakrabarti2002mining} descreve este classificador como o mais 
-eficiente na precisão e rotulagem de novas amostras. 
+\citeonline{chakrabarti2002mining}, descreve este classificador como o mais 
+eficiente, em precisão, na rotulagem de novas amostras. 
 
 \textit{AdaBoost} ou \textit{Adaptive Boosting} (``impulso ou estímulo 
 adaptativo''), é um classificador do tipo \textit{Boosting}, um dos algoritmos 
@@ -101,17 +102,17 @@ o AdaBoost tem a função de encontrar um conjunto de características que
 construirão o classificador forte, favorecendo uma melhor classificação do 
 conjunto de entrada.
 
-\citeonline{junior2017proposta} propõem no seu estudo o desenvolvimento de um 
+\citeonline{junior2017proposta}, propõem no seu estudo, o desenvolvimento de um 
 sistema para avaliação automática de redações, utilizando processamento de 
 linguagem natural, extração de características e classificação. O objetivo do 
 sistema é apresentar uma estratégia para redução do esforço no processo de 
-correção e avaliação das redações, para isso, no processamento do texto foi 
-eliminado o conjunto de termos que eventualmente não trazia significado ao 
-texto, na sequência são atribuidas marcas (``tags'') morfológicas e de inflexão 
+correção e avaliação das redações. Para isso, no processamento do texto, é 
+eliminado o conjunto de termos que eventualmente não traz significado ao 
+texto, na sequência, são atribuidas marcas (``tags'') morfológicas e de inflexão 
 para cada token do texto. Cada redação e representada por um vetor com as 
 seguintes características: quantidades de parágrafos, frases, palavras, 
 caracteres, erros ortográficos, e erros gramaticais identificados. A partir 
-deste vertor de características e realizada a inferência indutiva do 
+deste vertor de características é realizada a inferência indutiva do 
 classificador SVM ``Support Vector Machine''. O resultado apresentado é uma 
 acurácia de 52\% sobre a classificação da competência I (um) da matriz de 
 referência do \citeauthor{edital_enem:2016}.

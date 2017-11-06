@@ -1,21 +1,19 @@
 \section{Resultados}
 
 Este tópico é dedicado a apresentar os resultados, adversidades e contribuições 
-alcançadas durante o desenvolvimento do estudo referente ao problema proposto. 
-Por fim, são apresentadas considerações sobre as limitações ocorridas no 
-desenvolvimento deste trabalho. Nos resultados do problema proposto, este 
-estudo utilizou as principais métricas da literatura para análise de desempenho 
-dos classificadores.
+alcançadas durante o desenvolvimento do estudo. Por fim, são apresentadas 
+considerações sobre as limitações ocorridas no desenvolvimento deste trabalho.
 
 \subsection{Configuração do experimento}
 \label{subsection:configuracao}
 
 \textbf{Alvo} -- Dada a matriz de referência do \citeauthor{edital_enem:2016} 
-(\citeyear{edital_enem:2016}), a competência III foi selecionada 
-aleatoriamente como o alvo da inferência indutiva dos classificadores, para 
-teste da hipótese proposta.
+(\citeyear{edital_enem:2016}), a competência III, ``Selecionar, relacionar, 
+organizar e interpretar informações, fatos, opiniões e argumentos em defesa de 
+um ponto de vista.'', foi selecionada aleatoriamente, como o alvo da 
+inferência indutiva dos classificadores, para teste da hipótese proposta.
 
-\textbf{Naive Bayes} -- Para o algoritmo Naive Bayes não foi preciso ajustar os
+\textbf{Naive Bayes} -- Para o algoritmo Naive Bayes, não foi preciso ajustar os
 parâmetros, pois ele é não paramétrico.
 
 \textbf{AdaBoost} -- O Classificador base utilizado pelo AdaBoost foi a
@@ -31,7 +29,7 @@ vez com um conjunto diferente sendo deixado de fora para fazer a validação.
 
 Dada as 6 663 redações coletadas originalmente, a aplicação do método de 
 limpeza e balanceamento de dados, filtrou um segundo \textit{dataset}, dispondo 
-de 690 redações de temas diversificados, onde cada classe da competência III 
+de 690 redações de temas diversificados, onde, cada classe da competência III 
 possui uma amostragem de 138 redações. O Gráfico \ref{graphic:dataset_balanced} 
 demonstra e destaca a disposição das classes distintas, (0.00, 0.50, 1.00, 
 1.50, 2.00) sobre a competência III, bem como as disposição das classes, nas 
@@ -108,16 +106,16 @@ demais competências existentes no novo \textit{dataset}.
 
 \subsection{Resultado da inferência indutiva}
 
-A analise da curva ROC demostra o poder de descriminação de cada classe na 
-competência III pelos classificadores \textit{Naive Bayes} e \textit{Adaboost}. 
-O céu ROC ou ponto 1,0 no vetor Y do gráfico \ref{graphic:roc}, encontram-se os 
-pontos mais próximos da classificação perfeita e representam bons resultados, 
-enquanto os pontos próximos de 0,5 representa um poder de classificação 
-considerado aleatório. Através destes resultados, avalia-se que o poder de 
-discriminação das classes de ambos os classificadores são superiores ao ponto 
-aleatório, com uma considerável margem de espaço, ou seja, a indução dos 
-classificadores produziu informações com capacidade de distinguir as classes da 
-competência III.
+A analise da curva ROC demonstra o poder de descriminação de cada classe, pelos 
+classificadores \textit{Naive Bayes} e \textit{Adaboost}. O céu ROC ou ponto 
+1,0 no vetor Y do gráfico \ref{graphic:roc}, encontram-se os pontos mais 
+próximos da classificação perfeita, representa bons resultados, enquanto os 
+pontos próximos de 0,5 representa um poder de classificação considerado 
+aleatório. Através destes resultados, avalia-se que o poder de discriminação 
+das classes de ambos os classificadores é superior ao ponto aleatório, com 
+uma considerável margem de espaço, ou seja, a indução dos classificadores 
+produziu informações com capacidade de distinguir as classes da competência 
+III.
 
 % Curva ROC
 \begin{figure}[H]
@@ -156,21 +154,21 @@ competência III.
         \end{axis}
         \end{tikzpicture}
     \end{center}
-    \caption{A sobreposição dos resultados da curva ROC demostra o poder de 
+    \caption{A sobreposição dos resultados da curva ROC demonstra o poder de 
     descriminação de cada classe na competência III pelos classificadores 
     \textit{Naive Bayes} e \textit{Adaboost}.}
     \label{graphic:roc}
 \end{figure}
 
 Medir adequadamente o desempenho de classificadores através da taxa de acerto, 
-assume um papel importante no Aprendizado de Máquina, a acurácia expressa a 
-proporção de exemplos preditos como positivos corretamente. No gráfico 
-\ref{graphic:acuracia}, está delineado os resultados da \textit{acurácia} de 
-cada classe distinta, predita pelos classificadores na validação cruzada, com 
-isso, dado o poder de descriminação das classes apresentadas no gráfico 
-\ref{graphic:roc}, demonstra-se que os classificadores \textit{Naive Bayes} e 
-\textit{Adabost}, utilizam o conhecimento induzido corretamente para 
-rotulagem de novas amostras.
+assume um papel importante no Aprendizado de Máquina, a \textit{acurácia} 
+expressa a proporção de exemplos preditos como positivos corretamente. No 
+gráfico \ref{graphic:acuracia}, está delineado os resultados da 
+\textit{acurácia} de cada classe distinta, predita pelos classificadores na 
+validação cruzada, com isso, dado o poder de descriminação das classes 
+apresentadas no gráfico \ref{graphic:roc}, demonstra-se que os classificadores, 
+\textit{Naive Bayes} e \textit{Adabost}, utilizam o conhecimento induzido 
+corretamente, para rotulagem de novas amostras.
 
 \begin{figure}[H]
     \begin{center}
@@ -208,24 +206,18 @@ rotulagem de novas amostras.
         \end{axis}
         \end{tikzpicture}
     \end{center}
-    \caption{Os resultados da \textit{acurácia} demostra que o poder de 
+    \caption{Os resultados da \textit{acurácia} demonstra que o poder de 
     descriminação de cada classe na competência III pelos classificadores 
     \textit{Naive Bayes} e \textit{Adaboost} está sendo utilizada corretamente 
     na rotulagem de novas amostras}
     \label{graphic:acuracia}
 \end{figure}
 
-A matriz de confusão é uma importante ferramenta para avaliar os resultados das 
-predições, facilita visualmente o entendimento e reage aos efeitos de predições 
-falsas. A análise da matriz na Tabela \ref{tab:matrix_naive_bayes} e 
+A matriz de confusão é uma importante ferramenta, na avaliação dos resultados 
+das predições, facilita visualmente o entendimento e reage aos efeitos de 
+predições falsas. A análise da matriz na Tabela \ref{tab:matrix_naive_bayes} e 
 \ref{tab:matrix_adaboost} respectivamente dos algoritmos \textit{Naive Bayes} e 
-\textit{Adaboost} foi fundamental para a avaliação dos classificadores. Em 
-ambos classificadores o resultado poderia ser melhor, se caso o padrão 
-encontrado dentro do texto pudessem ser mensurado com maior representatividade 
-obtendo uma melhor separação entre as valorações da competência III, 
-entretanto, este resultado corrobora com a hipótese proposta para este estudo.
-
-
+\textit{Adaboost} foi fundamental para a avaliação dos classificadores.
 
 % Matriz de confusão Naive Bayes
 \begin{table}[H]
@@ -234,12 +226,12 @@ entretanto, este resultado corrobora com a hipótese proposta para este estudo.
     \cline{3-8}
      &  & \multicolumn{6}{c|}{\textit{Predição}} \\ \cline{3-8} 
      &  & \textbf{0.00} & \textbf{0.50} & \textbf{1.00} & \textbf{1.50} & \textbf{2.00} & $\sum_{}$  \\ \hline
-    \multicolumn{1}{|c|}{} & \textbf{0.00} & \textbf{92} & 23 & 9  & 6  & 8  & \textit{138} \\ \cline{2-8} 
-    \multicolumn{1}{|c|}{} & \textbf{0.50} & 20 & \textbf{83} & 28 & 4  & 3  & \textit{138} \\ \cline{2-8} 
-    \multicolumn{1}{|c|}{} & \textbf{1.00} & 24 & 18 & \textbf{68} & 19 & 9  & \textit{138} \\ \cline{2-8} 
-    \multicolumn{1}{|c|}{} & \textbf{1.50} & 19 & 5  & 12 & \textbf{75} & 27 & \textit{138} \\ \cline{2-8} 
-    \multicolumn{1}{|c|}{} & \textbf{2.00} & 19 & 6  & 7  & 52 & \textbf{54} & \textit{138} \\ \cline{2-8} 
-    \multicolumn{1}{|c|}{\multirow{-6}{*}{\textit{\rot{Atual}}}} & $\sum_{}$ & \textit{172} & \textit{135} & \textit{124} & \textit{156} & \textit{101} & \textit{690} \\ \hline
+    \multicolumn{1}{|c|}{} & \textbf{0.00} & \textbf{63} & 44 & 12 & 12 & 7  & \textit{138} \\ \cline{2-8} 
+    \multicolumn{1}{|c|}{} & \textbf{0.50} & 3  & \textbf{99} & 33 & 1  & 2  & \textit{138} \\ \cline{2-8} 
+    \multicolumn{1}{|c|}{} & \textbf{1.00} & 1  & 26 & \textbf{82} & 15 & 14 & \textit{138} \\ \cline{2-8} 
+    \multicolumn{1}{|c|}{} & \textbf{1.50} & 3  & 10 & 17 & \textbf{61} & 47 & \textit{138} \\ \cline{2-8} 
+    \multicolumn{1}{|c|}{} & \textbf{2.00} & 5  & 13 & 6  & 40 & \textbf{74} & \textit{138} \\ \cline{2-8} 
+    \multicolumn{1}{|c|}{\multirow{-6}{*}{\textit{\rot{Atual}}}} & $\sum_{}$ & \textit{75} & \textit{192} & \textit{150} & \textit{129} & \textit{144} & \textit{\textbf{690}} \\ \hline
     \end{tabular}
     \caption{Matriz de confusão resultante da indução do classificador Naive Bayes.}
     \label{tab:matrix_naive_bayes}
@@ -252,31 +244,33 @@ entretanto, este resultado corrobora com a hipótese proposta para este estudo.
     \cline{3-8}
      &  & \multicolumn{6}{c|}{\textit{Predição}} \\ \cline{3-8} 
      &  & \textbf{0.00} & \textbf{0.50} & \textbf{1.00} & \textbf{1.50} & \textbf{2.00} & $\sum_{}$  \\ \hline
-    \multicolumn{1}{|c|}{} & \textbf{0.00} & \textbf{83} & 10 & 27 & 11 & 7  & \textit{138} \\ \cline{2-8} 
-    \multicolumn{1}{|c|}{} & \textbf{0.50} & 17 & \textbf{74} & 38 & 8  & 1  & \textit{138} \\ \cline{2-8} 
-    \multicolumn{1}{|c|}{} & \textbf{1.00} & 10 & 19 & \textbf{77} & 19 & 13 & \textit{138} \\ \cline{2-8} 
-    \multicolumn{1}{|c|}{} & \textbf{1.50} & 3  & 2  & 21 & \textbf{74} & 38 & \textit{138} \\ \cline{2-8} 
-    \multicolumn{1}{|c|}{} & \textbf{2.00} & 12 & 3  & 12 & 50 & \textbf{61} & \textit{138} \\ \cline{2-8} 
-    \multicolumn{1}{|c|}{\multirow{-6}{*}{\textit{\rot{Atual}}}} & $\sum_{}$ & \textit{125} & \textit{108} & \textit{175} & \textit{162} & \textit{120} & \textit{690} \\ \hline
+    \multicolumn{1}{|c|}{} & \textbf{0.00} & \textbf{99} & 18 & 10 & 9  & 2  & \textit{138} \\ \cline{2-8} 
+    \multicolumn{1}{|c|}{} & \textbf{0.50} & 20 & \textbf{74} & 37 & 6  & 1  & \textit{138} \\ \cline{2-8} 
+    \multicolumn{1}{|c|}{} & \textbf{1.00} & 8  & 27 & \textbf{75} & 20 & 8  & \textit{138} \\ \cline{2-8} 
+    \multicolumn{1}{|c|}{} & \textbf{1.50} & 9  & 1  & 18 & \textbf{66} & 44 & \textit{138} \\ \cline{2-8} 
+    \multicolumn{1}{|c|}{} & \textbf{2.00} & 7  & 5  & 13 & 50 & \textbf{63} & \textit{138} \\ \cline{2-8} 
+    \multicolumn{1}{|c|}{\multirow{-6}{*}{\textit{\rot{Atual}}}} & $\sum_{}$ & \textit{143} & \textit{125} & \textit{153} & \textit{151} & \textit{118} & \textit{690} \\ \hline
     \end{tabular}
     \caption{Matriz de confusão resultante da indução do classificador Adaboost.}
     \label{tab:matrix_adaboost}
 \end{table}
 
 De acordo ainda com a análise da matriz de confusão apresentada nas Tabelas 
-\ref{tab:matrix_naive_bayes} e \ref{tab:matrix_adaboost} observou--se que 
-quanto mais próximos as classes, maior é o número de confusões preditas pelos 
-classificadores e quanto mais longe as classes, menor o número de confusões, ou 
-seja, ambos os classificadores tendem as confundir mais as classes 0.00 e 1.00 do 
-que as classes 0.00 e 2.00. Com isso, conclui-se que existe um padrão que pode 
-ser visivelmente representado entre as classe 0.00 e 2.00. Dada esta 
-observação, o gráfico \ref{graphic:padrao} sobrepõem as tabelas produzidas pelo 
-método \textit{bag-of-words} de vinte redações, onde a competência III foi 
-corretamente rotulada como 0.00 e 2.00 por ambos os classificadores, 
-respectivamente uma amostragem de dez redações de cada classe. É perceptível 
-que ambas possuem o mesmo comportamento, mas em escalas diferentes, o que 
-desmonstra o padrão de cada classe. 
+\ref{tab:matrix_naive_bayes} e \ref{tab:matrix_adaboost} observou--se que: 
+quanto mais próximas as classes, maior é o número de confusões preditas pelos 
+classificadores e quanto mais distantes as classes, menor o número de 
+confusões, ou seja, ambos os classificadores tendem a confundir mais as 
+classes 0,00 e 0,50, do que as classes 0,00 e 2,00, com isso, conclui-se, 
+existe um padrão que pode ser visivelmente representado entre as classe 0,00 e 
+2,00. Dada esta observação, o gráfico \ref{graphic:padrao} sobrepõem as tabelas 
+produzidas pelo método \textit{bag-of-words} de vinte redações, onde a 
+competência III foi corretamente rotulada, com as classes 0,00 e 2,00, por ambos 
+os classificadores, respectivamente, uma amostragem de dez redações para cada 
+classe. É perceptível que ambas possuem um comportamento similar, entretanto, a 
+frequência das palavras utilizadas oscila de uma forma diferente em cada 
+classe, o que demonstra o padrão existente em cada texto. 
 
+\pgfplotsset{/pgf/number format/use comma}
 \begin{figure}[H]
     \begin{center}
         \begin{tikzpicture}
@@ -284,9 +278,9 @@ desmonstra o padrão de cada classe.
             width=15cm, 
             height=8cm, 
             grid=both, 
+            ymin=0.0, ymax=30.0,
             xmin=0, xmax=75,
-            ymin=0.000, ymax=30.0,
-            ylabel={Pesos},
+            ylabel={Frequência},
             xlabel={Índice dos \textit{tokens}},
             legend style={at={(0.7,0.9)},anchor=north west}]
         
@@ -317,16 +311,25 @@ desmonstra o padrão de cada classe.
         \end{axis}
         \end{tikzpicture}
     \end{center}
-    \caption{.....}
+    \caption{A sobreposição de vinte tabelas produzidas pelo método 
+    \textit{bag-of-words} demonstra o padrão encontrado em cada texto de redação.}
     \label{graphic:padrao}
 \end{figure}
 
-Como explicado antes, a definição de um melhor algoritmo entre os analisados é 
-inviável, e não faz parte da proposta deste trabalho. Entretanto, o 
-classificador \textit{Naive Bayes} apresentou um resultado significativamente 
-maior, no entanto, isto não significa que tal algoritmo seja de fato seja melhor 
-que o \textit{Adaboost}, todavia, atestou a hipótese proposta e demonstrou que 
-ambos os algoritmos, que possuem logica de predição destinta, quando 
-induzidos, recuperam padrões implícitos no texto da redação. Contudo, as 
-métricas aqui calculadas poderão ser utilizadas para guiar uma escolha de 
-algoritmos para elaboração de trabalhos futuros.
+Em ambos os classificadores, o resultado poderia ser melhor, caso o padrão 
+encontrado nas redações, pudessem ser mensurado com maior representatividade, 
+obtendo uma melhor separação entre as classes. O fato do \textit{dataset} ser 
+essêncialmente composto por redações de temas diversificados, amenizou o poder 
+dos classificadores na rotulagem de novas amostras, contudo, alcançou 
+resultados positivos nas métricas propostas, o que corrobora com a hipótese 
+proposta para este estudo.
+
+A definição de um melhor algoritmo entre os analisados é inviável, e não 
+faz parte da proposta deste trabalho. Entretanto, o classificador 
+\textit{Naive Bayes} apresentou um resultado significativamente maior, no 
+entanto, isto não significa que tal algoritmo seja de fato melhor que o 
+\textit{Adaboost}, todavia, atestou a hipótese proposta e demonstrou que ambos 
+os algoritmos, que possuem logica de predição distinta, quando induzidos, 
+recuperam padrões implícitos no texto da redação. Contudo, as métricas aqui 
+calculadas poderão ser utilizadas para guiar uma escolha de algoritmos para 
+elaboração de trabalhos futuros.
